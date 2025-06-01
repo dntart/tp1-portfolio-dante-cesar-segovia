@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
-
+    line-height: 1.5;
+    /*espaciado texto vertical*/
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .nav-bar {
@@ -10,20 +13,74 @@
     flex-direction: row;
     justify-content: end;
     border: solid black;
-    border-radius: 25px;
-    margin-top: 10px;
+    border-radius: 75px;
+    margin: 10px 100px 0 100px;
     padding: 25px;
+    font-size: 20px;
 
 }
 
 .nav-bar ul {
     display: flex;
     border: solid black;
-}
-.nav-bar .cont-hire{
-    border: solid black;
-    padding: 10px;
-    border-radius: 25px;
-    
+    list-style: none;
+    /*quitar vineta*/
 
+
+}
+
+.nav-bar ul li {
+    padding: 20px;
+
+}
+
+.nav-bar .cont-hire {
+    border: solid black;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+/*presentation*/
+.cont-presentation-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 100px;
+
+    gap: 50px;
+}
+
+
+.cont-presentation-text h1 {
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+.cont-highlighted {
+    font-size: 70px;
+    font-weight: 700;
+    background-color: aquamarine;
+    padding: 5px;
+}
+.cont-presentation-text p{
+     margin: 20px 0 20px 0;
+}
+.cont-hire-porfolio{
+    display: flex;
+    gap: 30px;
+    margin: 30px 0 20px 0;
+
+}
+.cont-hire-porfolio p{
+    border: solid black;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+}
+.cont-ubication{
+   margin: 50px 0 20px 0;
+    display: flex;
+    gap: 30px;
 }
