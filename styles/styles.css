@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    border: solid black;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 25px;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    border: solid black;
+}
+.nav-bar .cont-hire{
+    border: solid black;
+    padding: 10px;
+    border-radius: 25px;
+    
+
+}
