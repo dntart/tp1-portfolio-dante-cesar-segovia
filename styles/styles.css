@@ -13,6 +13,8 @@ body {
 }
 
 .nav-bar {
+    width: 1250px;
+    height: 70px;
     position: fixed;
     z-index: 1000;
     /*con valor mil asegura estar por encima de todo*/
@@ -44,17 +46,64 @@ body {
     padding: 20px;
 
 }
+a{  
+    color: inherit;
+    text-decoration: none;
+    transition:  color 0.3s;
+}
 
+a:hover{
+    color: rgb(255, 125, 103); /*para animar el navbar revisar */
+}
 .nav-bar .cont-hire {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid black;
     padding: 20px;
     border-radius: 50px;
     background-color: black;
     color: white;
     font-weight: 500;
+
+}
+
+.nav-bar img {
+    margin: 20px 10px 10px 10px;
+
+
+}
+
+.cont-img-redes-1 {
+    height: 35px;
+    width: auto;
+
+}
+
+.cont-img-redes-2 {
+    height: 35px;
+    width: auto;
+
+}
+
+.cont-img-redes-3 {
+    height: 35px;
+    width: auto;
+
 }
 
 /*presentation*/
+.cont-add-avaible {
+    display: flex;
+}
+
+.cont-add-avaible img {
+    width: 25px;
+    margin-right: 10px;
+}
+
 .cont-presentation-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -101,6 +150,35 @@ body {
     display: flex;
     gap: 30px;
 }
+
+.cont-perfil {
+    max-width: 90%;
+    /*mantiene img dentro del contenedor*/
+    height: auto;
+    display: block;
+    border-radius: 100%;
+    outline: 15px solid aquamarine;
+    border: ;
+}
+
+.cont-ubication {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*se me genero un margin entre img y p que solo pude resolver con flex, ver*/
+
+}
+
+.cont-ubication img {
+    width: 25px;
+
+
+}
+
+.cont-ubication p {
+    margin: 0;
+}
+
 
 /*Proyects*/
 .cont-proyects {
@@ -175,7 +253,7 @@ body {
     background-color: rgb(247, 176, 232);
     position: relative;
     transform: rotate(-3deg);
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .cont-proyect-3:hover {
@@ -249,7 +327,8 @@ body {
     transition: transform 0.3s ease;
 
 }
-.cont-position-1:hover{
+
+.cont-position-1:hover {
     transform: scale(1.05);
 }
 
@@ -272,7 +351,8 @@ body {
     transition: transform 0.3s ease;
 
 }
-.cont-position-2:hover{
+
+.cont-position-2:hover {
     transform: scale(1.05);
 }
 
@@ -295,7 +375,8 @@ body {
     transition: transform 0.3s ease;
 
 }
-.cont-position-3:hover{
+
+.cont-position-3:hover {
     transform: scale(1.05);
 }
 
@@ -318,7 +399,8 @@ body {
     transition: transform 0.3s ease;
 
 }
-.cont-position-4:hover{
+
+.cont-position-4:hover {
     transform: scale(1.05);
 }
 
@@ -333,4 +415,25 @@ body {
     position: absolute;
     top: 3%;
     right: 2%;
+}
+
+/*Skills*/
+.cont-mi-skills {
+    font-size: 30px;
+    background-color: aquamarine;
+    padding: 5px;
+    display: inline-block;
+    /* inline-block solucion para que el background ocupe solo el h2, otra solucion es envolver en h2 en un div y darle class*/
+    margin: 100px 0 0 0;
+}
+
+.cont-skills-cards {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cont-skills-cards img {
+    height: 200px;
 }
