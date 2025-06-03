@@ -13,6 +13,12 @@ body {
 }
 
 .nav-bar {
+    position:fixed;
+    z-index: 1000; /*con valor mil asegura estar por encima de todo*/
+    top: 0;
+    left: 100px;
+    right: 100px;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -51,12 +57,14 @@ body {
 .cont-presentation-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    margin-top: 100px;
+    margin-top: 250px;
     gap: 50px;
+    
 }
 
 
 .cont-presentation-text h1 {
+        
     font-size: 70px;
     font-weight: 700;
 
@@ -100,7 +108,7 @@ body {
     padding: 5px;
     display: inline-block;
     /*solucion para que el fondo ocupe solo el h2, otra solucion es envolver en h2 en un div y darle class*/
-    margin: 50px 0 50px 0;
+    margin: 50px 0 100px 0;
 }
 
 
@@ -112,39 +120,41 @@ body {
 
 .cont-proyect-1 {
 
-    height: 380px;
+    height: 400px;
     border: solid black;
     border-radius: 20px;
     background-color: rgb(178, 253, 253);
     position: relative;
     transform: rotate(-3deg);
 }
-.cont-button-1{
-    position:absolute;
+
+.cont-button-1 {
+    position: absolute;
     top: 80%;
-    left:35%;
+    left: 35%;
     /*no necesita el t.rotate se ajusto con el*/
 }
 
 .cont-proyect-2 {
 
-    height: 380px;
+    height: 400px;
     border: solid black;
     border-radius: 20px;
     background-color: bisque;
     position: relative;
     transform: rotate(3deg);
 }
-.cont-button-2{
-    position:absolute;
+
+.cont-button-2 {
+    position: absolute;
     top: 80%;
-    left:35%;
+    left: 35%;
     /*no necesita el t.rotate se ajusto con el*/
 }
 
 .cont-proyect-3 {
 
-    height: 380px;
+    height: 400px;
     border: solid black;
     border-radius: 20px;
     background-color: rgb(247, 176, 232);
@@ -152,12 +162,14 @@ body {
     transform: rotate(-3deg);
 
 }
-.cont-button-3{
-    position:absolute;
+
+.cont-button-3 {
+    position: absolute;
     top: 80%;
-    left:35%;
+    left: 35%;
     /*no necesita el t.rotate se ajusto con el*/
 }
+
 .cont-button-1 {
     border: solid black;
     border-radius: 25px;
@@ -185,6 +197,99 @@ body {
     background-color: aquamarine;
     padding: 5px;
     display: inline-block;
-    /*solucion para que el fondo ocupe solo el h2, otra solucion es envolver en h2 en un div y darle class*/
-    margin: 50px 0 50px 0;
+    /* inline-block solucion para que el background ocupe solo el h2, otra solucion es envolver en h2 en un div y darle class*/
+    margin: 100px 0 0 0;
+}
+
+.cont-services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.cont-services-cards p {
+    font-size: 25px;
+    width: 650px;
+    height: 220px;
+    border-radius: 25px;
+    border: solid black;
+    /*para centrar el texto en su contenedor*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cont-position-1 {
+    position: relative;
+     background-color: rgb(253, 178, 189);
+
+}
+
+.cont-circle-1 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /*si no uso inline-block no toma la forma circular*/
+    border: solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+}
+
+.cont-position-2 {
+    position: relative;
+    background-color: rgb(178, 253, 253);
+}
+
+.cont-circle-2 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /*si no uso inline-block no toma la forma circular*/
+    border: solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+}
+
+.cont-position-3 {
+    position: relative;
+    background-color: bisque;
+}
+
+.cont-circle-3 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /*si no uso inline-block no toma la forma circular*/
+    border: solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+}
+
+.cont-position-4 {
+    position: relative;
+    background-color: rgb(247, 176, 232);
+}
+
+.cont-circle-4 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /*si no uso inline-block no toma la forma circular*/
+    border: solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3%;
+    right: 2%;
 }
