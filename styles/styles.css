@@ -13,8 +13,9 @@ body {
 }
 
 .nav-bar {
-    position:fixed;
-    z-index: 1000; /*con valor mil asegura estar por encima de todo*/
+    position: fixed;
+    z-index: 1000;
+    /*con valor mil asegura estar por encima de todo*/
     top: 0;
     left: 100px;
     right: 100px;
@@ -59,12 +60,12 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     margin-top: 250px;
     gap: 50px;
-    
+
 }
 
 
 .cont-presentation-text h1 {
-        
+
     font-size: 70px;
     font-weight: 700;
 
@@ -126,6 +127,12 @@ body {
     background-color: rgb(178, 253, 253);
     position: relative;
     transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.cont-proyect-1:hover {
+    transform: rotate(-3deg) scale(1.05);
+    /* combine los dos transform porque ya tengo un transform para inclinar el contenedor y el hover solo me toma 1*/
 }
 
 .cont-button-1 {
@@ -143,7 +150,15 @@ body {
     background-color: bisque;
     position: relative;
     transform: rotate(3deg);
+    transition: transform 0.3s ease;
 }
+
+.cont-proyect-2:hover {
+    transform: rotate(3deg) scale(1.05);
+    /* combine los dos transform porque ya tengo un transform para inclinar el contenedor y el hover solo me toma 1*/
+}
+
+
 
 .cont-button-2 {
     position: absolute;
@@ -160,8 +175,15 @@ body {
     background-color: rgb(247, 176, 232);
     position: relative;
     transform: rotate(-3deg);
-
+     transition: transform 0.3s ease;
 }
+
+.cont-proyect-3:hover {
+    transform: rotate(-3deg) scale(1.05);
+    /* combine los dos transform porque ya tengo un transform para inclinar el contenedor y el hover solo me toma 1*/
+}
+
+
 
 .cont-button-3 {
     position: absolute;
@@ -223,8 +245,12 @@ body {
 
 .cont-position-1 {
     position: relative;
-     background-color: rgb(253, 178, 189);
+    background-color: rgb(253, 178, 189);
+    transition: transform 0.3s ease;
 
+}
+.cont-position-1:hover{
+    transform: scale(1.05);
 }
 
 .cont-circle-1 {
@@ -243,6 +269,11 @@ body {
 .cont-position-2 {
     position: relative;
     background-color: rgb(178, 253, 253);
+    transition: transform 0.3s ease;
+
+}
+.cont-position-2:hover{
+    transform: scale(1.05);
 }
 
 .cont-circle-2 {
@@ -261,6 +292,11 @@ body {
 .cont-position-3 {
     position: relative;
     background-color: bisque;
+    transition: transform 0.3s ease;
+
+}
+.cont-position-3:hover{
+    transform: scale(1.05);
 }
 
 .cont-circle-3 {
@@ -279,6 +315,11 @@ body {
 .cont-position-4 {
     position: relative;
     background-color: rgb(247, 176, 232);
+    transition: transform 0.3s ease;
+
+}
+.cont-position-4:hover{
+    transform: scale(1.05);
 }
 
 .cont-circle-4 {
