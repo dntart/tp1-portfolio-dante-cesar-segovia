@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
-    line-height: 1.5;
+    line-height: 1.8;
     /*espaciado texto vertical*/
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
+}
+
+body {
+    margin: 0 100px 0 100px;
 }
 
 .nav-bar {
@@ -14,7 +18,7 @@
     justify-content: end;
     border: solid black;
     border-radius: 75px;
-    margin: 10px 100px 0 100px;
+    margin-top: 10px;
     padding: 25px;
     font-size: 20px;
 
@@ -47,8 +51,7 @@
 .cont-presentation-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    margin: 100px;
-
+    margin-top: 100px;
     gap: 50px;
 }
 
@@ -65,22 +68,123 @@
     background-color: aquamarine;
     padding: 5px;
 }
-.cont-presentation-text p{
-     margin: 20px 0 20px 0;
+
+.cont-presentation-text p {
+    margin: 20px 0 20px 0;
 }
-.cont-hire-porfolio{
+
+.cont-hire-porfolio {
     display: flex;
     gap: 30px;
     margin: 30px 0 20px 0;
+    /*estilo button para resaltar*/
 
 }
-.cont-hire-porfolio p{
+
+.cont-hire-porfolio p {
     border: solid black;
     border-radius: 25px;
     padding: 10px 20px 10px 20px;
 }
-.cont-ubication{
-   margin: 50px 0 20px 0;
+
+.cont-ubication {
+    margin: 50px 0 20px 0;
     display: flex;
     gap: 30px;
+}
+
+/*Proyects*/
+.cont-proyects {
+    font-size: 30px;
+    background-color: aquamarine;
+    padding: 5px;
+    display: inline-block;
+    /*solucion para que el fondo ocupe solo el h2, otra solucion es envolver en h2 en un div y darle class*/
+    margin: 50px 0 50px 0;
+}
+
+
+.cont-proyects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 17px;
+}
+
+.cont-proyect-1 {
+
+    height: 380px;
+    border: solid black;
+    border-radius: 20px;
+    background-color: rgb(178, 253, 253);
+    position: relative;
+    transform: rotate(-3deg);
+}
+.cont-button-1{
+    position:absolute;
+    top: 80%;
+    left:35%;
+    /*no necesita el t.rotate se ajusto con el*/
+}
+
+.cont-proyect-2 {
+
+    height: 380px;
+    border: solid black;
+    border-radius: 20px;
+    background-color: bisque;
+    position: relative;
+    transform: rotate(3deg);
+}
+.cont-button-2{
+    position:absolute;
+    top: 80%;
+    left:35%;
+    /*no necesita el t.rotate se ajusto con el*/
+}
+
+.cont-proyect-3 {
+
+    height: 380px;
+    border: solid black;
+    border-radius: 20px;
+    background-color: rgb(247, 176, 232);
+    position: relative;
+    transform: rotate(-3deg);
+
+}
+.cont-button-3{
+    position:absolute;
+    top: 80%;
+    left:35%;
+    /*no necesita el t.rotate se ajusto con el*/
+}
+.cont-button-1 {
+    border: solid black;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+
+}
+
+.cont-button-2 {
+    border: solid black;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+
+}
+
+.cont-button-3 {
+    border: solid black;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+
+}
+
+/*services*/
+.cont-mi-services {
+    font-size: 30px;
+    background-color: aquamarine;
+    padding: 5px;
+    display: inline-block;
+    /*solucion para que el fondo ocupe solo el h2, otra solucion es envolver en h2 en un div y darle class*/
+    margin: 50px 0 50px 0;
 }
