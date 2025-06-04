@@ -533,4 +533,143 @@ a:hover {
 
  /*media querie*/
 
- 
+ @media screen and (max-width: 480px) {
+  body {
+    margin: 0 15px;
+  }
+
+  .nav-bar {
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar ul li {
+    padding: 10px 0;
+  }
+
+  .nav-bar .cont-hire {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .cont-home a {
+    font-size: 28px;
+    justify-content: center;
+  }
+
+  .cont-presentation-img {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+    gap: 20px;
+  }
+
+  .cont-presentation-text h1,
+  .cont-highlighted {
+    font-size: 38px;
+  }
+
+  .cont-presentation-text p {
+    font-size: 16px;
+  }
+
+  .cont-perfil {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .cont-hire-porfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont-hire-porfolio p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cont-ubication {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+  }
+/*Services*/
+  .cont-services-cards {
+    max-width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .cont-services-cards p {
+    width: 100%;
+    font-size: 18px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+/*Skills*/
+  .cont-skills-cards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cont-skills-cards img {
+    height: 100px;
+    margin: 10px 0;
+  }
+/*Proyects*/
+  .cont-proyects-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cont-proyect-1,
+  .cont-proyect-2,
+  .cont-proyect-3 {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .cont-button-1,
+  .cont-button-2,
+  .cont-button-3 {
+    left: 38%;
+    top: 80%;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+/*Contact*/
+  .cont-form input,
+  .cont-form textarea {
+    width: 80%;
+  }
+/*Footer*/
+  .cont-footer {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .cont-footer h2 {
+    font-size: 22px;
+  }
+
+  .cont-phrase {
+    font-size: 16px;
+  }
+
+  .cont-copyright {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+}
